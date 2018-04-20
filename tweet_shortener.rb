@@ -10,6 +10,7 @@ def word_substituter(tweet)
     "you" => "u",
     "at" => "@",
     "and" => "&"
+  }
 
     tweetarr = tweetarr.split(" ").collect do |word|
       if dictionary.keys.include?(word.downcase)
