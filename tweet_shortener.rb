@@ -12,7 +12,7 @@ def word_substituter(tweet)
     "and" => "&"
   }
 
-    tweetarr = tweetarr.split(" ").collect do |word|
+    tweetarr = tweet.split(" ").collect do |word|
       if dictionary.keys.include?(word.downcase)
         word = dictionary[word.downcase]
       else
